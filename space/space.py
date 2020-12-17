@@ -5,8 +5,6 @@ import numpy as np
 
 space = np.loadtxt('space.csv', delimiter=';', dtype=str, encoding='utf-8', skiprows=1)
 
-#Num;Company Name;Location;Datum;Detail;Status Rocket; Cost;Status Mission
-
 # Questão 01
 unique, counts = np.unique(space[:, -1], return_counts=True)
 
